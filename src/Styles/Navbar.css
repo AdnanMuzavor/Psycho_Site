@@ -1,0 +1,48 @@
+/* Navbar Styles */
+
+.navbar {
+    background-color: #4a90e2 !important;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove the default border */
+    padding: 0.25rem 0.5rem; /* Adjust padding for better appearance */
+    background-color: transparent; /* Set background to transparent */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff;
+    border-radius: 4px; /* Add a slight border-radius for a softer look */
+  }
+  
+  .navbar-toggler:focus {
+    outline: none; /* Remove focus outline for better appearance */
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-right: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #f9a825;
+  }
+  
+  .nav-link.active {
+    color: #f9a825;
+    font-weight: bold;
+  }
+  
+
+

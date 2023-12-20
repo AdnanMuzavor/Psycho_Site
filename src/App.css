@@ -1,38 +1,310 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app-container {
+    background: linear-gradient(to bottom, #720e9e, #9b4fe7); /* Gradient from dark purple to a lighter shade of purple */
   }
+  
+/* Navbar Styles */
+
+.navbar {
+  background-color: #4a90e2 !important;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  /* Remove the default border */
+  padding: 0.25rem 0.5rem;
+  /* Adjust padding for better appearance */
+  background-color: transparent;
+  /* Set background to transparent */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 4px;
+  /* Add a slight border-radius for a softer look */
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  /* Remove focus outline for better appearance */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-right: 1.5rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f9a825;
+}
+
+.nav-link.active {
+  color: #f9a825;
+  font-weight: bold;
+}
+
+
+/* Home Styles */
+
+/* General Styles */
+.home-container {
+  padding: 2rem;
+  
+}
+
+.content-container {
+  width: 100%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
+}
+
+/* Animation Keyframes for Floating Effect */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjusted for a subtle effect */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation to .floating-graphic */
+.floating-graphic {
+  padding: 2rem;
+  background-color: #e6f7ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* Add the floating animation */
+  animation: floatAnimation 3s infinite alternate;
 }
 
-.App-link {
-  color: #61dafb;
+.psycho-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quote-container {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 3px solid #6c2e9c;
+  border-radius: 20px;
+  background-color: #f4e9fc;
+  box-shadow: 0 6px 12px rgba(108, 46, 156, 0.1);
+}
+
+.mental-health-quote {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  color: #4a0072;
+  line-height: 1.5;
+}
+
+/* Add responsive styles */
+@media (max-width: 992px) {
+  .content-container {
+    margin: 1rem auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .floating-graphic,
+  .quote-container {
+    padding: 1rem;
+  }
+
+  .mental-health-quote {
+    font-size: 1.2rem;
   }
 }
+
+
+/* Animation Keyframes */
+
+@keyframes floatAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+  .floating-graphic,
+  .quote-container {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+}
+
+/* Styling for the About Page */
+
+/* Styling for the About Page */
+
+
+
+.about-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 4rem;
+  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+
+
+.psycho-image {
+ width: 20rem; /* Adjust size as needed */
+  border-top-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #4a006e; /* Dark purple border */
+  border-radius: 20%; /* Rounded border to match the shape of the image */
+  padding: 20px; /* Padding to adjust spacing around the image */
+  background-color: #e0d9ff; /* Whitish-purple background color */
+
+ 
+}
+
+
+.intro-container {
+  flex: 1;
+  padding-left: 2rem;
+  color: #333; /* Text color */
+}
+
+.intro-container h1 {
+  font-size: 1.4rem; /* Adjust font size as needed */
+  margin-bottom: 1rem;
+}
+
+.intro-container p {
+  font-size: 1.1rem; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      padding: 2rem;
+  }
+
+  .image-container {
+      margin-bottom: 2rem; /* Add space between sections on smaller screens */
+  }
+}
+.qualifications-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+  justify-content: space-between; /* Distribute boxes evenly */
+  margin-top: 3rem; /* Add spacing from the intro section */
+}
+
+.qualification-box {
+  flex: 1; /* Equal width for all boxes */
+  padding: 2rem;
+  margin: 2.4rem; /* Adjust margins for spacing between boxes */
+  border: 2px solid #4a006e; /* Dark purple border */
+  border-radius: 10px; /* Rounded corners */
+  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
+  text-align: center; /* Center align text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.course-title {
+  font-size: 1.5rem; /* Larger font size for course title */
+  margin-bottom: 1rem; /* Add spacing between title and college name */
+}
+
+.college-name {
+  font-size: 1rem; /* Smaller font size for college name */
+  color: #6c2e9c; /* Dark purple color for contrast */
+}
+
+
+
+.section-header {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4a006e; /* Dark purple color */
+}
+
+/* Arrange qualification boxes alternatively on big screens */
+.qualification-box.top {
+  order: 1;
+}
+
+.qualification-box.bottom {
+  order: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .qualification-box {
+      width: 100%;
+      margin: 1rem 0;
+      order: 0; /* Reset the order on smaller screens */
+  }
+}
+
+.qualification-box::after {
+  content: '';
+  position: absolute;
+  top:-10;
+  width: 100%; /* Make it horizontal by using width */
+  height: 1px; /* Thickness of the line */
+  background-color: #4a006e; /* Dark purple color */
+  bottom: -15px; /* Adjust this value to control the position of the line */
+  left: 50%; /* Position it to the center of the box */
+  transform: translateX(-50%); /* Center it exactly below the box */
+}
+
+/* Adjustments for the qualifications container */
+.qualifications-container {
+  display: flex;
+  position: relative;
+  padding: 20px 0; /* Add some padding to ensure the lines don't overlap with text */
+  justify-content:center;
+  
+}
+
+.qualification-box {
+  position: relative; /* Add this to make the lines position relative to the boxes */
+  margin-bottom: 50px; /* Adjust this value based on your design */
+}
+
