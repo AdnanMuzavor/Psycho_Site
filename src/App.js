@@ -7,8 +7,14 @@ import Home from './Screens/Home'; // Assuming you have a Home component
 import About from './Screens/About'; // Assuming you have an About component
 import Services from './Screens/Services'; // Assuming you have a Services component
 import Contact from './Screens/Contact';
-
+import{ useEffect } from "react";
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
 
     <>
