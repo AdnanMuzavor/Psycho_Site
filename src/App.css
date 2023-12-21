@@ -1,7 +1,8 @@
 .app-container {
-    background: linear-gradient(to bottom, #720e9e, #9b4fe7); /* Gradient from dark purple to a lighter shade of purple */
-  }
-  
+  background: linear-gradient(to bottom, #720e9e, #9b4fe7);
+  /* Gradient from dark purple to a lighter shade of purple */
+}
+
 /* Navbar Styles */
 
 .navbar {
@@ -59,19 +60,20 @@
 /* General Styles */
 .home-container {
   padding: 2rem;
-  
+
 }
 
 .content-container {
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
+  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* Gradient background with pink and purple */
 }
 
 /* Animation Keyframes for Floating Effect */
@@ -79,9 +81,12 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-10px); /* Adjusted for a subtle effect */
+    transform: translateY(-10px);
+    /* Adjusted for a subtle effect */
   }
+
   100% {
     transform: translateY(0);
   }
@@ -101,8 +106,8 @@
 }
 
 .psycho-image {
-  max-width: 100%;
-  height: auto;
+  width: 24rem !important;
+  height: 24rem !important;
   border-radius: 15px;
 }
 
@@ -118,7 +123,7 @@
 
 .mental-health-quote {
   font-family: 'Georgia', serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #4a0072;
   line-height: 1.5;
 }
@@ -144,167 +149,289 @@
 
 @keyframes floatAnimation {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
+
   100% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
 /* Responsive Styles */
 
 @media (max-width: 992px) {
+
   .floating-graphic,
   .quote-container {
-      width: 100%;
-      margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
 /* Styling for the About Page */
 
-/* Styling for the About Page */
-
-
 
 .about-container {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Center content vertically */
   padding: 4rem;
-  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* Gradient background with pink and purple */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
 }
 
 
 
 .psycho-image {
- width: 20rem; /* Adjust size as needed */
+  width: 20rem;
+  /* Adjust size as needed */
   border-top-left-radius: 50% 15%;
   border-bottom-right-radius: 50% 15%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
 }
+
 .image-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 4px solid #4a006e; /* Dark purple border */
-  border-radius: 20%; /* Rounded border to match the shape of the image */
-  padding: 20px; /* Padding to adjust spacing around the image */
-  background-color: #e0d9ff; /* Whitish-purple background color */
+  border: 4px solid #4a006e;
+  /* Dark purple border */
+  border-radius: 20%;
+  /* Rounded border to match the shape of the image */
+  padding: 20px;
+  /* Padding to adjust spacing around the image */
+  background-color: #e0d9ff;
+  /* Whitish-purple background color */
 
- 
+
 }
 
 
 .intro-container {
   flex: 1;
   padding-left: 2rem;
-  color: #333; /* Text color */
+  color: #333;
+  /* Text color */
 }
 
 .intro-container h1 {
-  font-size: 1.4rem; /* Adjust font size as needed */
+  font-size: 1.4rem;
+  /* Adjust font size as needed */
   margin-bottom: 1rem;
 }
 
 .intro-container p {
-  font-size: 1.1rem; /* Adjust font size as needed */
-  line-height: 1.6; /* Adjust line height for readability */
+  font-size: 1.1rem;
+  /* Adjust font size as needed */
+  line-height: 1.6;
+  /* Adjust line height for readability */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-      flex-direction: column; /* Stack elements vertically on smaller screens */
-      padding: 2rem;
+    flex-direction: column;
+    /* Stack elements vertically on smaller screens */
+    padding: 2rem;
   }
 
   .image-container {
-      margin-bottom: 2rem; /* Add space between sections on smaller screens */
+    margin-bottom: 2rem;
+    /* Add space between sections on smaller screens */
   }
 }
+
 .qualifications-container {
   display: flex;
-  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
-  justify-content: space-between; /* Distribute boxes evenly */
-  margin-top: 3rem; /* Add spacing from the intro section */
+  flex-wrap: wrap;
+  /* Allow boxes to wrap to the next line */
+  justify-content: space-between;
+  /* Distribute boxes evenly */
+  margin-top: 3rem;
+  /* Add spacing from the intro section */
 }
 
 .qualification-box {
-  flex: 1; /* Equal width for all boxes */
+  flex: 1;
+  /* Equal width for all boxes */
   padding: 2rem;
-  margin: 2.4rem; /* Adjust margins for spacing between boxes */
-  border: 2px solid #4a006e; /* Dark purple border */
-  border-radius: 10px; /* Rounded corners */
-  background: linear-gradient(45deg, #e6c1ff, #b392f0); /* Gradient background with pink and purple */
-  text-align: center; /* Center align text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin: 2.4rem;
+  /* Adjust margins for spacing between boxes */
+  border: 2px solid #4a006e;
+  /* Dark purple border */
+  border-radius: 10px;
+  /* Rounded corners */
+  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* Gradient background with pink and purple */
+  text-align: center;
+  /* Center align text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
 }
 
 .course-title {
-  font-size: 1.5rem; /* Larger font size for course title */
-  margin-bottom: 1rem; /* Add spacing between title and college name */
+  font-size: 1.5rem;
+  /* Larger font size for course title */
+  margin-bottom: 1rem;
+  /* Add spacing between title and college name */
 }
 
 .college-name {
-  font-size: 1rem; /* Smaller font size for college name */
-  color: #6c2e9c; /* Dark purple color for contrast */
+  font-size: 1rem;
+  /* Smaller font size for college name */
+  color: #6c2e9c;
+  /* Dark purple color for contrast */
 }
 
 
 
 .section-header {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
   font-size: 2rem;
-  color: #4a006e; /* Dark purple color */
+  color: #b392f0;
+  /* Dark purple color */
 }
 
-/* Arrange qualification boxes alternatively on big screens */
-.qualification-box.top {
-  order: 1;
-}
 
-.qualification-box.bottom {
-  order: 2;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .qualification-box {
-      width: 100%;
-      margin: 1rem 0;
-      order: 0; /* Reset the order on smaller screens */
+    width: 100%;
+    margin: 1rem 0;
+    order: 0;
+    /* Reset the order on smaller screens */
   }
 }
 
 .qualification-box::after {
   content: '';
   position: absolute;
-  top:-10;
-  width: 100%; /* Make it horizontal by using width */
-  height: 1px; /* Thickness of the line */
-  background-color: #4a006e; /* Dark purple color */
-  bottom: -15px; /* Adjust this value to control the position of the line */
-  left: 50%; /* Position it to the center of the box */
-  transform: translateX(-50%); /* Center it exactly below the box */
+  top: -10;
+  width: 100%;
+  /* Make it horizontal by using width */
+  height: 1px;
+  /* Thickness of the line */
+  background-color: #4a006e;
+  /* Dark purple color */
+  bottom: -15px;
+  /* Adjust this value to control the position of the line */
+  left: 50%;
+  /* Position it to the center of the box */
+  transform: translateX(-50%);
+  /* Center it exactly below the box */
 }
 
 /* Adjustments for the qualifications container */
 .qualifications-container {
   display: flex;
   position: relative;
-  padding: 20px 0; /* Add some padding to ensure the lines don't overlap with text */
-  justify-content:center;
-  
+  padding: 20px 0;
+  /* Add some padding to ensure the lines don't overlap with text */
+  justify-content: center;
+
 }
 
 .qualification-box {
-  position: relative; /* Add this to make the lines position relative to the boxes */
-  margin-bottom: 50px; /* Adjust this value based on your design */
+  position: relative;
+  /* Add this to make the lines position relative to the boxes */
+  margin-bottom: 50px;
+  /* Adjust this value based on your design */
 }
 
+/*Mission Card styling*/
+
+.mission-card {
+  width: 30rem;
+  height: 12rem;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  background-color: #9b4fe7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*Service card styling*/
+/* Services.css */
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for transform and background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 23rem;
+}
+
+.card-wrapper:hover {
+  cursor: pointer;
+  color: #fff !important;
+  background-color: #9b4fe7;
+  border-radius: 0.8rem;
+}
+
+.service-card:hover .service-content {
+  color: #fff;
+}
+
+.service-image {
+  width: 98%;
+  /* Make sure the image takes the full width of its container */
+  height: 13rem !important;
+  /* Maintain aspect ratio */
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  border: 4px solid #9b4fe7;
+  /* Deep purple border */
+  box-shadow: 0 4px 8px rgba(138, 75, 175, 0.1);
+  /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth transition on hover */
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+  /* Scale up a bit on hover for a nice effect */
+}
+
+.service-content {
+  padding: 1rem;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #777;
+}
