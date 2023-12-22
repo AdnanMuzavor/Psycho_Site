@@ -469,73 +469,121 @@
   }
 }
 
-/*Vontacyt Section Styling*/
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(45deg, #e6c1ff, #b392f0);
-  /* Gradient background with pink and purple */
-  border-radius: 15px;
-  /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
+
+
+/*Landing Page CSS*/
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflowing content */
 }
 
-.contact-container {
-  background-color: #f9f9f9;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.background-image {
+  background-image: url('./Assets/main_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%); /* Light shade to the image */
 }
 
-.contact-form {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
 }
 
-.input-group {
+.quote {
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.sub-text {
+  font-size: 1.5rem;
+  opacity: 0.8; /* Lighter text */
+  margin-bottom: 40px;
 }
 
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.submit-btn {
+.contact-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
   background-color: #6c2e9c;
-  color: #ffffff;
-  padding: 10px 20px;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover {
-  background-color: #4a0072;
+.contact-btn:hover {
+  background-color: #4a0072; /* Darker shade on hover */
 }
 
-.img-container {
-  text-align: center;
-  padding: 20px;
+/*Contact*/
+
+.main-container{
+
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.contact-bg{
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/10445119/2100/1400/m1/fpnw/wm1/mental_health_two_heads_cm-.jpg?1623164584&s=989ca1ece072e874b2c2623674a5686e');
+  background-image: url('https://cdn.dribbble.com/users/5286978/screenshots/11351279/media/2921821d36e86e73ed00b8518e09f946.png');
+  background-size: cover;
+ 
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%); /* Light shade to the image */
+}
+
+.content{
+  background-color: #4a90e2;
+  z-index: 1;
+  width: 70%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-color: rgb(126, 120, 120);
+  opacity: 0.8;
+  border-radius: 0.8rem;
+}
+
+.input-group{
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.label{
+  margin-right: 1rem;
+  color: #fff;
+}
+
+input{
+ border: none;
+}
+
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

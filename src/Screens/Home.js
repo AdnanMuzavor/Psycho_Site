@@ -1,11 +1,14 @@
 import React from 'react';
 import About from './About';
 import Services from './Services';
+import LandingPage from '../Components/Landing_comp';
+import Contact from './Contact';
 
 
 const Home = () => {
     return (
         <>
+        <LandingPage/>
             <div className="home-container " >
             <h2 className="section-header" data-aos="flip-down" data-aos-duration="1500">Welcome</h2>
                 <div className="row">
@@ -39,6 +42,7 @@ const Home = () => {
                 </div>
             </div>
             <About />
+            <Contact/>
             <Services/>
         </>
     );
