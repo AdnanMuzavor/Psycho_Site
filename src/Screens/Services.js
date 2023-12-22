@@ -1,5 +1,6 @@
 import React from 'react';
 import Service_Card from '../Components/Service_Card';
+import TestimonialCarousel from '../Components/Testinimial';
 
 const Services = () => {
     // Sample service data using useState
@@ -66,6 +67,7 @@ const Services = () => {
                     ))}
                 </div>
             </div>
+            <TestimonialCarousel/>
         </>
     );
 }

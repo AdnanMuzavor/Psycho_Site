@@ -184,7 +184,8 @@
   border-radius: 15px;
   /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Shadow for depth */
+
+
 }
 
 
@@ -434,4 +435,107 @@
 .service-description {
   font-size: 1rem;
   color: #777;
+}
+
+.testimonial-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial.active {
+  display: block;
+  animation: fadeInOut 1s forwards;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/*Vontacyt Section Styling*/
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* Gradient background with pink and purple */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.contact-container {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #6c2e9c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4a0072;
+}
+
+.img-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }

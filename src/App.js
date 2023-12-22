@@ -8,6 +8,9 @@ import About from './Screens/About'; // Assuming you have an About component
 import Services from './Screens/Services'; // Assuming you have a Services component
 import Contact from './Screens/Contact';
 import{ useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure this line is present
+// import "./../node_modules/bootstrap/dist/js/bootstrap.bundle"
 // importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
