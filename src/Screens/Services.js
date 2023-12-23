@@ -1,6 +1,6 @@
 import React from 'react';
 import Service_Card from '../Components/Service_Card';
-import TestimonialCarousel from '../Components/Testinimial';
+import Testimonial from '../Components/Testinomials';
 
 const Services = () => {
     // Sample service data using useState
@@ -53,7 +53,7 @@ const Services = () => {
     return (
         <>
             <div className='container mt-3'>
-                <h2 className="section-header" data-aos="flip-down" data-aos-duration="1500">Here's How I Can Help You</h2>
+                <h5 className="section-header" data-aos="flip-down" data-aos-duration="1500">Here's How I Can Help You</h5>
                 <div className="row about-container" data-aos="zoom-in" data-aos-duration="1500">
                     {/* Service Cards */}
                     {services.map(service => (
@@ -67,7 +67,7 @@ const Services = () => {
                     ))}
                 </div>
             </div>
-            <TestimonialCarousel/>
+        <Testimonial/>
         </>
     );
 }

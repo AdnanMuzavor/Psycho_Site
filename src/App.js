@@ -14,6 +14,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure this line is prese
 // importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from './Components/Footer';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -33,6 +34,7 @@ function App() {
 
         </Routes>
       </div>
+      <Footer/>
     </>
 
   );
