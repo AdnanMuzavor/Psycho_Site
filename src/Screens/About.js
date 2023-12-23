@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import img from "../Assets/Afree_Di.jpeg"
 import Qaulification_Card from '../Components/Qualification_Card';
 import Mission_Card from '../Components/Mission_Card';
+import Navbar from '../Components/Navbar';
 const About = () => {
     const Qualification = [
         {
@@ -48,6 +49,8 @@ const About = () => {
         },
     ];
     return (
+        <>
+   
         <div className='container mt-3' >
             <h2 className="section-header" data-aos="flip-down" data-aos-duration="1500">Meet your psychologist</h2>
             <div className="about-container" data-aos="zoom-in" data-aos-duration="1500">
@@ -85,6 +88,7 @@ const About = () => {
 
             </div>
         </div>
+        </>
     );
 };
 

@@ -1,9 +1,8 @@
-
-
 /* Navbar Styles */
 
 .navbar {
-  background-color: #4a90e2 !important;
+  background-color: #9b4fe7 !important;
+
   padding: 1rem 2rem;
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -11,7 +10,7 @@
 
 .navbar-brand {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: bold;
 }
 
@@ -31,24 +30,24 @@
 }
 
 .navbar-toggler:focus {
-  outline: none;
+  outline: none !important;
   /* Remove focus outline for better appearance */
 }
 
 .nav-link {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #ffffff !important;
   margin-right: 1.5rem;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #f9a825;
+  color: #f9a825 !important;
 }
 
 .nav-link.active {
-  color: #f9a825;
-  font-weight: bold;
+  color: #f9a825 !important;
+  font-weight: bold !important;
 }
 
 
@@ -69,7 +68,8 @@
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* background: linear-gradient(45deg, #e6c1ff, #b392f0); */
+  background-color: #9b4fe7;
   /* Gradient background with pink and purple */
 }
 
@@ -176,7 +176,8 @@
   /* Center content vertically */
   padding: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  /* background: linear-gradient(45deg, #e6c1ff, #b392f0); */
+  background-color: #9b4fe7;
   /* Gradient background with pink and purple */
   border-radius: 15px;
   /* Rounded corners */
@@ -217,7 +218,7 @@
 .intro-container {
   flex: 1;
   padding-left: 2rem;
-  color: #333;
+  color: #fff;
   /* Text color */
 }
 
@@ -268,11 +269,12 @@
   /* Dark purple border */
   border-radius: 10px;
   /* Rounded corners */
-  background: linear-gradient(45deg, #e6c1ff, #b392f0);
+  background: #9b4fe7 ;
   /* Gradient background with pink and purple */
   text-align: center;
   /* Center align text */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
   /* Shadow for depth */
 }
 
@@ -286,7 +288,7 @@
 .college-name {
   font-size: 1rem;
   /* Smaller font size for college name */
-  color: #6c2e9c;
+  color: #fff;
   /* Dark purple color for contrast */
 }
 
@@ -295,7 +297,8 @@
 .section-header {
   text-align: center;
   font-size: 1.5rem;
-  color: #b392f0;
+
+  color:  #9b4fe7;
   /* Dark purple color */
 }
 
@@ -364,6 +367,7 @@
   background-color: #9b4fe7;
   color: #fff;
   cursor: pointer;
+  border: 5px solid #fff;
 }
 
 .section-header {
@@ -435,7 +439,7 @@
 }
 
 /*CSS for testinomials*/
-.testi-container{
+.testi-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,16 +447,19 @@
   width: 100%;
   height: 100vh;
 }
-.testinomial-bg{
+
+.testinomial-bg {
   background-image: url('https://cdn.wallpapersafari.com/30/93/QRP5tU.jpg') !important;
   background-size: cover;
   background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  filter: brightness(70%); /* Light shade to the image */
+  filter: brightness(70%);
+  /* Light shade to the image */
 
 }
+
 .testimonial-card {
   background-color: #fff;
   border-radius: 8px;
@@ -462,18 +469,22 @@
   width: 300px;
   text-align: center;
   flex: 1 0 calc(33.333% - 40px);
-  transition: all 1s;
+  transition: all 2s;
+  border: 5px solid #fff;
 }
-.testimonial-card:hover{
+
+.testimonial-card:hover {
   background-color: #9b4fe7;
-  transform: rotate(10deg);
   transform: translateY(-10px);
   cursor: pointer;
   color: #fff;
-}
-.testimonial-card:hover .testimonial-image{
   border: 5px solid #fff;
 }
+
+.testimonial-card:hover .testimonial-image {
+  border: 5px solid #fff;
+}
+
 .testimonial-image {
   width: 100px;
   height: 100px;
@@ -499,19 +510,23 @@
   color: #888;
 }
 
-.testi-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 .testi-content {
   display: flex;
-  flex-wrap: wrap; /* This will make sure cards wrap on smaller screens */
   justify-content: center;
   align-items: center;
-  gap: 20px; /* This adds space between cards */
-  padding: 15px 15px; /* Added some padding on the sides to prevent sticking to edges on smaller screens */
+
+}
+
+.testi-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* This will make sure cards wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* This adds space between cards */
+  padding: 15px 15px;
+  /* Added some padding on the sides to prevent sticking to edges on smaller screens */
 }
 
 
@@ -519,8 +534,10 @@
 .landing-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Hide overflowing content */
+  height: 100vh;
+  /* Full viewport height */
+  overflow: hidden;
+  /* Hide overflowing content */
 }
 
 .background-image {
@@ -530,7 +547,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  filter: brightness(70%); /* Light shade to the image */
+  filter: brightness(70%);
+  /* Light shade to the image */
 }
 
 .overlay {
@@ -550,14 +568,15 @@
 
 .sub-text {
   font-size: 1.5rem;
-  opacity: 0.8; /* Lighter text */
+  opacity: 0.8;
+  /* Lighter text */
   margin-bottom: 40px;
 }
 
 .contact-btn {
   padding: 15px 30px;
   font-size: 1.2rem;
-  background-color: #6c2e9c;
+  background-color: #9b4fe7;
   color: white;
   border: none;
   border-radius: 5px;
@@ -566,66 +585,70 @@
 }
 
 .contact-btn:hover {
-  background-color: #4a0072; /* Darker shade on hover */
+  background-color: #4a0072;
+  /* Darker shade on hover */
 }
 
 /*Contact*/
 
-.main-container{
+.main-container {
 
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide overflowing content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+  overflow: hidden;
+  /* Hide overflowing content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.contact-bg{
+.contact-bg {
   background-image: url('https://images.creativemarket.com/0.1.0/ps/10445119/2100/1400/m1/fpnw/wm1/mental_health_two_heads_cm-.jpg?1623164584&s=989ca1ece072e874b2c2623674a5686e');
   background-image: url('https://cdn.dribbble.com/users/5286978/screenshots/11351279/media/2921821d36e86e73ed00b8518e09f946.png');
   background-size: cover;
- 
+
   background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  filter: brightness(70%); /* Light shade to the image */
+  filter: brightness(70%);
+  /* Light shade to the image */
 }
 
-.content{
+.content {
   background-color: #4a90e2;
   z-index: 1;
-  width: 70%;
+  width: 80%;
   padding: 0.8rem;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   background-color: rgb(126, 120, 120);
   opacity: 0.8;
   border-radius: 0.8rem;
 }
 
-.input-group{
+.input-group {
   padding: 1.2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-.label{
+.label {
   margin-right: 1rem;
   color: #fff;
 }
 
-input{
- border: none;
+input {
+  border: none;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -652,7 +675,7 @@ input{
 }
 
 .goto-top-btn {
-  background-color: #6c2e9c;
+  background-color: #9b4fe7;
   color: #fff;
   padding: 0.8rem 2rem;
   border: none;
@@ -668,4 +691,85 @@ input{
 .footer-made-by {
   margin-top: 2rem;
   color: #4a006e;
+}
+
+
+/*Icon in contact page*/
+.icon-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  padding: 1rem;
+  border: 2px solid #fff;
+  background-color: #9b4fe7;
+  margin: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveup 4s infinite;
+  color: #fff;
+}
+
+@keyframes moveup {
+  50% {
+    background-color: #4a006e;
+
+  }
+
+  80% {
+    background-color: #9b4fe7;
+
+  }
+}
+
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark color for brand */
+
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  margin-right: 15px; /* Spacing between links */
+  color: #555; /* Darker shade for links */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Hamburger Menu Icon */
+.navbar-toggler-icon {
+  border: 1px solid #333; /* Dark border for icon */
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Active link color */
+}
+
+/* Sticky Navbar */
+.sticky-top {
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  z-index: 1000; /* Ensure Navbar is above other elements */
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+      margin-right: 0; /* Remove margin for smaller screens */
+      margin-bottom: 10px; /* Add vertical spacing between links */
+  }
 }

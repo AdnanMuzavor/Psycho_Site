@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 const Contact = () => {
@@ -28,10 +28,16 @@ const Contact = () => {
                         </div>
                         <button className=" contact-btn">Let's Connect</button>
                     </form>
+                    <div className='icon-container'>
+
+                        <a href="YOUR_INSTAGRAM_LINK_HERE" target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="YOUR_LINKEDIN_LINK_HERE" target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                        <a href="https://wa.me/919158155470" target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faWhatsapp} /></a>
+                    </div>
                 </div>
 
             </div>
-          
+
         </>
     )
 }
