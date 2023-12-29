@@ -6,8 +6,9 @@ import Home from './Screens/Home'; // Assuming you have a Home component
 import About from './Screens/About'; // Assuming you have an About component
 import Services from './Screens/Services'; // Assuming you have a Services component
 import Contact from './Screens/Contact';
-import{ useEffect } from "react";
+import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Components/Footer';
@@ -18,10 +19,10 @@ function App() {
   return (
 
     <>
-     <Navbar/>
+      <Navbar />
       <div className="app-container">
-     
-       
+
+
         <Routes>
 
           <Route exact path="/" element={<Home />} />
@@ -31,8 +32,8 @@ function App() {
 
         </Routes>
       </div>
-     
-      <Footer/>
+
+      <Footer />
     </>
 
   );
