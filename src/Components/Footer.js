@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
-      // Function to scroll to the top of the page
+      // Function to scroll to the top of page
   const goToTop = () => {
     window.scrollTo({
       top: 0,
