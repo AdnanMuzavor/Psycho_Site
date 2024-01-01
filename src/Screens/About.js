@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import img from "../Assets/Afree_Di.jpeg"
-import Qaulification_Card from '../Components/Qualification_Card';
-import Mission_Card from '../Components/Mission_Card';
-import Navbar from '../Components/Navbar';
+import QaulificationCard from '../Components/Qualification_Card';
+import MissionCard from '../Components/Mission_Card';
+
 const About = () => {
     const Qualification = [
         {
@@ -56,7 +56,7 @@ const About = () => {
             <div className="about-container" data-aos="zoom-in" data-aos-duration="1500">
                 {/* Left side with image */}
                 <div className="image-container" data-aos="zoom-in-up">
-                    <img src={img} data-aos="zoom-out-down" data-aos-duration="1500" alt="Psycho Image" className="img-fluid psycho-image" />
+                    <img src={img} data-aos="zoom-out-down" data-aos-duration="1500" alt="Psychologist" className="img-fluid psycho-image" />
                 </div>
 
                 {/* Right side with introduction */}
@@ -70,7 +70,7 @@ const About = () => {
             <h2 className="section-header" data-aos="flip-down" data-aos-duration="1500">My Qualifications</h2>
             <div className="qualifications-container row">
                 {Qualification.map((e) => {
-                    return <Qaulification_Card course={e.course} college={e.college} key={e.key} />
+                    return <QaulificationCard course={e.course} college={e.college} key={e.key} />
                 })}
             </div>
             {/* Header for Mission */}
@@ -79,7 +79,7 @@ const About = () => {
                 {/* Mission Cards */}
                 {
                     Mission.map((e) => {
-                        return <Mission_Card title={e.title} mission={e.mission} key={e.key} />
+                        return <MissionCard title={e.title} mission={e.mission} key={e.key} />
                     })
                 }
 

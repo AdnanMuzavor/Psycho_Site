@@ -1,6 +1,6 @@
-import react from 'react'
 
-const Testinomial_Card = ({ e }) => {
+
+const TestinomialCard = ({ e }) => {
     return (
         <>
             <div className="testimonial-card col-10 col-md-3 col-lg-3" data-aos={e.anim} data-aos-duration="1000">
@@ -13,4 +13,4 @@ const Testinomial_Card = ({ e }) => {
     )
 }
 
-export default Testinomial_Card
+export default TestinomialCard

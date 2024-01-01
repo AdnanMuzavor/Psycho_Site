@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Testinomial_Card from './Testinomial_card';
+import React from 'react';
+import TestinomialCard from './Testinomial_card';
 
 const Testimonial = () => {
     const testimonials = [
@@ -44,7 +44,7 @@ const Testimonial = () => {
                             return (
                                 <>
 
-                                    <Testinomial_Card
+                                    <TestinomialCard
                                         e={e}
                                         key={index}
                                     />

@@ -1,5 +1,5 @@
 import React from 'react';
-import Service_Card from '../Components/Service_Card';
+import ServiceCard from '../Components/Service_Card';
 import Testimonial from '../Components/Testinomials';
 
 const Services = () => {
@@ -57,7 +57,7 @@ const Services = () => {
                 <div className="row about-container" data-aos="zoom-in" data-aos-duration="1500">
                     {/* Service Cards */}
                     {services.map(service => (
-                        <Service_Card
+                        <ServiceCard
                             key={service.key}
                             anim={service.anim}
                             img={service.img}

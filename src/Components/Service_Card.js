@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Service_Card = ({ key, anim, img, title, descrp }) => {
+const ServiceCard = ({ key, anim, img, title, descrp }) => {
     return (
         <>
             <div key={key} className="card-wrapper col-md-4 mb-4">
@@ -16,4 +16,4 @@ const Service_Card = ({ key, anim, img, title, descrp }) => {
     )
 }
 
-export default Service_Card
+export default ServiceCard

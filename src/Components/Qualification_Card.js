@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Qaulification_Card = ({ course, college }) => {
+const QaulificationCard = ({ course, college }) => {
     return (
         <>
             <div className="qualification-box col-10 col-lg-3 col-md-3" data-aos="fade-down-right" data-aos-duration="1500">
@@ -11,4 +11,4 @@ const Qaulification_Card = ({ course, college }) => {
     )
 }
 
-export default Qaulification_Card
+export default QaulificationCard

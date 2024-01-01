@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mission_Card = ({ title, mission }) => {
+const MissionCard = ({ title, mission }) => {
     return (
         <>
             <div className="mission-card col-10 col-lg-3 col-md-5" data-aos="zoom-in" data-aos-duration="1500">
@@ -11,4 +11,4 @@ const Mission_Card = ({ title, mission }) => {
     )
 }
 
-export default Mission_Card
+export default MissionCard
